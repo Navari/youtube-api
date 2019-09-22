@@ -1,0 +1,19 @@
+{
+    "name": "navari/youtube-api",
+    "description": "Youtube api to project",
+    "require": {
+        "google/apiclient": "^2.4"
+    },
+    "autoload":{
+    	"psr-4":{
+    		"Youtube\\":"src/"
+    	}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Celalettin YILMAZ",
+            "email": "celalettin@ozmodesk.com"
+        }
+    ]
+}
