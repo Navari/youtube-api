@@ -4,10 +4,10 @@ namespace Youtube;
 class Config {
     public static function options() {
         $options = new \stdClass;
-        $options->ApiKey = "AIzaSyA5A20Crbo9G7GKsXYVBVOX1YLsHSjM6lU";
-        $options->ClientId = "117917764812-6kvh009da5ebsp5dp30hod54td27lgk0.apps.googleusercontent.com";
-        $options->ClientSecret = "eN3g7PyIZozRTru1RpLXTBTi";
-        $options->RedirectUrl = "http://localhost/google-api-php-client/youtubevideo.php";
+        $options->ApiKey = env('YOUTUBE_API_KEY');
+        $options->ClientId = env('YOUTUBE_CLIENT_ID');
+        $options->ClientSecret = env('YOUTUBE_CLIENT_SECRET');
+        $options->RedirectUrl = env('YOUTUBE_REDIRECT_URL');
         $options->LanguageCode = "TR";
         return $options;
     }
